@@ -1,1 +1,16 @@
-<html><body>Admin Panel</body></html>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin Panel</title>
+</head>
+<body>
+  <h1>Telegram Bot Logs</h1>
+  <form method="POST">
+    <input type="password" name="password" placeholder="Admin Password" required>
+    <button type="submit">View Logs</button>
+  </form>
+  {% if logs %}
+    <pre>{{ logs }}</pre>
+  {% endif %}
+</body>
+</html>
